@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="AutolayoutTipsNTricks" customModuleProvider="target">
+            <connections>
+                <outlet property="loginPage" destination="z4y-Oa-mjq" id="1sc-mD-hQI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="z4y-Oa-mjq">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="440"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFU-gb-9Nn">
+                    <rect key="frame" x="100" y="133" width="266" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hky-OE-ymK">
+                    <rect key="frame" x="100" y="183" width="266" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBF-PL-o9k">
+                    <rect key="frame" x="200.5" y="242" width="66" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dBF-PL-o9k" firstAttribute="top" secondItem="hky-OE-ymK" secondAttribute="bottom" constant="29" id="3FD-Nh-DxL"/>
+                <constraint firstItem="cFU-gb-9Nn" firstAttribute="leading" secondItem="z4y-Oa-mjq" secondAttribute="leading" constant="100" id="4kf-BZ-wEF"/>
+                <constraint firstItem="hky-OE-ymK" firstAttribute="top" secondItem="cFU-gb-9Nn" secondAttribute="bottom" constant="20" id="JlY-3D-8ax"/>
+                <constraint firstItem="hky-OE-ymK" firstAttribute="centerY" secondItem="z4y-Oa-mjq" secondAttribute="centerY" multiplier="0.9" id="Kzf-Rg-Ssq"/>
+                <constraint firstItem="hky-OE-ymK" firstAttribute="leading" secondItem="z4y-Oa-mjq" secondAttribute="leading" constant="100" id="V2T-F6-xKT"/>
+                <constraint firstAttribute="trailing" secondItem="cFU-gb-9Nn" secondAttribute="trailing" constant="100" id="bQY-Ro-cHP"/>
+                <constraint firstAttribute="trailing" secondItem="hky-OE-ymK" secondAttribute="trailing" constant="100" id="yBO-Tg-Fp9"/>
+                <constraint firstItem="dBF-PL-o9k" firstAttribute="centerX" secondItem="z4y-Oa-mjq" secondAttribute="centerX" id="zoy-T7-pzo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="217" y="261"/>
+        </view>
+    </objects>
+</document>

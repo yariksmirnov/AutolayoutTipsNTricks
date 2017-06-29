@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StickyHeaderViewController" customModule="AutolayoutTipsNTricks" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="D6C-Bq-9Vn" id="Lz8-Di-k7V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="D6C-Bq-9Vn" customClass="TableHeaderView" customModule="AutolayoutTipsNTricks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeathStarPFStarWars" translatesAutoresizingMaskIntoConstraints="NO" id="gua-Ik-ltK">
+                    <rect key="frame" x="0.0" y="-108" width="450" height="361"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gua-Ik-ltK" secondAttribute="height" multiplier="16/9" priority="750" id="l2f-Da-PfN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darth-vader" translatesAutoresizingMaskIntoConstraints="NO" id="YkY-yT-YwT">
+                    <rect key="frame" x="165" y="193" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="M8N-BU-eVG"/>
+                        <constraint firstAttribute="width" constant="120" id="v54-it-jH2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="The Lord Sith and master of the Universe. Join me on the dark side of the Force." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-2g-eVj">
+                    <rect key="frame" x="80" y="364" width="290" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Darth Vader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-GP-jD8">
+                    <rect key="frame" x="177" y="333" width="97" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.95899748322147649" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gua-Ik-ltK" secondAttribute="trailing" id="0bE-Me-Wu1"/>
+                <constraint firstItem="PD6-2g-eVj" firstAttribute="leading" secondItem="D6C-Bq-9Vn" secondAttribute="leading" constant="80" id="15j-eC-5iU"/>
+                <constraint firstItem="gua-Ik-ltK" firstAttribute="top" secondItem="D6C-Bq-9Vn" secondAttribute="top" priority="750" id="Cp8-xe-aMp"/>
+                <constraint firstItem="YkY-yT-YwT" firstAttribute="centerX" secondItem="D6C-Bq-9Vn" secondAttribute="centerX" id="Fev-oV-SPq"/>
+                <constraint firstAttribute="bottom" secondItem="PD6-2g-eVj" secondAttribute="bottom" constant="20" id="GvL-Nz-7C0"/>
+                <constraint firstItem="gua-Ik-ltK" firstAttribute="leading" secondItem="D6C-Bq-9Vn" secondAttribute="leading" id="OGK-Z9-ail"/>
+                <constraint firstItem="NfU-GP-jD8" firstAttribute="centerX" secondItem="D6C-Bq-9Vn" secondAttribute="centerX" id="Yi4-ky-ooT"/>
+                <constraint firstItem="PD6-2g-eVj" firstAttribute="top" secondItem="NfU-GP-jD8" secondAttribute="bottom" constant="10" id="dN9-3G-CYI"/>
+                <constraint firstItem="NfU-GP-jD8" firstAttribute="top" secondItem="YkY-yT-YwT" secondAttribute="bottom" constant="20" id="haj-WT-h7a"/>
+                <constraint firstItem="YkY-yT-YwT" firstAttribute="centerY" secondItem="gua-Ik-ltK" secondAttribute="bottom" id="k8H-Kw-mse"/>
+                <constraint firstAttribute="trailing" secondItem="PD6-2g-eVj" secondAttribute="trailing" constant="80" id="pgu-w4-bHt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="gua-Ik-ltK" id="IEj-Tx-u1c"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="199"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DeathStarPFStarWars" width="639" height="361"/>
+        <image name="darth-vader" width="524" height="514"/>
+    </resources>
+</document>

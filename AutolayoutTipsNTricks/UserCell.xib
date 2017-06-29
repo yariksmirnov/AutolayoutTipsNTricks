@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="jlJ-SV-fgM" customClass="UserCell" customModule="AutolayoutTipsNTricks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="jlJ-SV-fgM" id="mjs-QR-6ko">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="darth-vader" translatesAutoresizingMaskIntoConstraints="NO" id="D0J-Pf-4nH">
+                        <rect key="frame" x="16" y="21.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="ID0-G8-gl6"/>
+                            <constraint firstAttribute="height" constant="60" id="tVB-45-itA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUL-qY-Bzx">
+                        <rect key="frame" x="86" y="35.5" width="71" height="19"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="qweqwrqwqr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwd-ZU-doT">
+                        <rect key="frame" x="86" y="54.5" width="83.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Dwd-ZU-doT" secondAttribute="bottom" constant="18" id="0KF-hK-o0D"/>
+                    <constraint firstAttribute="bottom" secondItem="D0J-Pf-4nH" secondAttribute="bottom" constant="8" id="0tE-p4-tNS"/>
+                    <constraint firstItem="kUL-qY-Bzx" firstAttribute="leading" secondItem="D0J-Pf-4nH" secondAttribute="trailing" constant="10" id="41f-ni-czq"/>
+                    <constraint firstItem="kUL-qY-Bzx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="D0J-Pf-4nH" secondAttribute="top" id="Azc-Ly-1QU"/>
+                    <constraint firstItem="Dwd-ZU-doT" firstAttribute="top" secondItem="kUL-qY-Bzx" secondAttribute="bottom" id="D3M-Ru-0Z8"/>
+                    <constraint firstItem="D0J-Pf-4nH" firstAttribute="leading" secondItem="mjs-QR-6ko" secondAttribute="leading" constant="16" id="LIz-rX-EHm"/>
+                    <constraint firstItem="kUL-qY-Bzx" firstAttribute="centerY" secondItem="mjs-QR-6ko" secondAttribute="centerY" priority="751" id="Oc0-4L-PFl"/>
+                    <constraint firstItem="D0J-Pf-4nH" firstAttribute="centerY" secondItem="mjs-QR-6ko" secondAttribute="centerY" id="Yoy-n3-lCb"/>
+                    <constraint firstItem="Dwd-ZU-doT" firstAttribute="leading" secondItem="D0J-Pf-4nH" secondAttribute="trailing" constant="10" id="ofq-zl-nWs"/>
+                    <constraint firstItem="kUL-qY-Bzx" firstAttribute="bottom" secondItem="mjs-QR-6ko" secondAttribute="centerY" priority="750" constant="-5" id="t5j-bb-o9a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsLabel" destination="Dwd-ZU-doT" id="dyu-XB-VZK"/>
+                <outlet property="nameLabel" destination="kUL-qY-Bzx" id="1RY-Y4-1t2"/>
+                <outlet property="userImageView" destination="D0J-Pf-4nH" id="5Ue-OW-lkH"/>
+            </connections>
+            <point key="canvasLocation" x="235.5" y="301"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="darth-vader" width="524" height="514"/>
+    </resources>
+</document>
